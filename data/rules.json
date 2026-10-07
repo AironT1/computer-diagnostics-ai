@@ -1,0 +1,30 @@
+[
+  {
+    "rule_id": "r1",
+    "conditions": {"power_on": false},
+    "conclusion": {"check": "power_supply", "diagnosis": "Проверьте питание и блок питания."},
+    "confidence": 0.9,
+    "description": "Компьютер не включается"
+  },
+  {
+    "rule_id": "r2",
+    "conditions": {"no_image": true, "monitor_on": true},
+    "conclusion": {"check": "video_cable", "diagnosis": "Проверьте кабель монитора и подключение видеокарты."},
+    "confidence": 0.88,
+    "description": "Нет изображения при включенном мониторе"
+  },
+  {
+    "rule_id": "r3",
+    "conditions": {"computer_reboots": true},
+    "conclusion": {"check": "temperature", "diagnosis": "Проверьте перегрев и систему охлаждения."},
+    "confidence": 0.84,
+    "description": "Компьютер перезагружается"
+  },
+  {
+    "rule_id": "r4",
+    "conditions": {"slow_work": true},
+    "conclusion": {"check": "ram_and_drive", "diagnosis": "Проверьте оперативную память и состояние диска."},
+    "confidence": 0.75,
+    "description": "Компьютер работает медленно"
+  }
+]
